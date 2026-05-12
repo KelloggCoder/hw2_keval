@@ -86,11 +86,121 @@ Actor.destroy_all
 
 # Generate models and tables, according to the domain model.
 # TODO!
+# *** Do i need to do anything here? These models were all created and columns created via the rails generate model command and then column creation in the migration file
+# *** can't run those rails commands in the ruby code itself, only runs in the terminal window.
+
 
 
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
 # TODO!
+
+new_studio = Studio.new
+  new_studio ["name"] = "Warner Bros"
+ new_studio.save
+  
+new_movie = Movie.new
+  new_movie ["title"] = "Batman Begins"
+  new_movie ["year_released"] = "2005"
+  new_movie ["rated"] = "PG-13"
+    new_movie.save
+
+ new_movie = Movie.new 
+  new_movie ["title"] = "The Dark Knight"
+  new_movie ["year_released"] = "2008"
+  new_movie ["rated"] = "PG-13"
+    new_movie.save
+
+new_movie = Movie.new
+  new_movie ["title"] = "The Dark Knight Rises"
+  new_movie ["year_released"] = "2012"
+  new_movie ["rated"] = "PG-13"
+    new_movie.save
+
+new_actor = Actor.new
+  new_actor ["name"] = "Christian Bale"
+  new_actor.save
+
+new_actor = Actor.new
+  new_actor ["name"] = "Michael Caine"
+  new_actor.save
+  
+new_actor = Actor.new
+  new_actor ["name"] = "Liam Neeson"
+  new_actor.save
+
+new_actor = Actor.new
+  new_actor ["name"] = "Katie Holmes"
+  new_actor.save
+
+new_actor = Actor.new
+  new_actor ["name"] = "Gary Oldman"
+  new_actor.save
+
+new_actor = Actor.new
+  new_actor ["name"] = "Heath Ledger"
+  new_actor.save
+
+new_actor = Actor.new
+  new_actor ["name"] = "Aaron Eckhart"
+  new_actor.save
+
+new_actor = Actor.new
+  new_actor ["name"] = "Maggie Gyllenhaal"
+  new_actor.save
+
+new_actor = Actor.new
+  new_actor ["name"] = "Tom Hardy"
+  new_actor.save
+
+new_actor = Actor.new
+  new_actor ["name"] = "Joseph Gordon-Levitt"
+  new_actor.save
+
+new_actor = Actor.new
+  new_actor ["name"] = "Anne Hathaway"
+  new_actor.save
+
+new_role = Role.new
+  new_role ["character_name"] = "Bruce Wayne"
+  new_role.save
+
+new_role = Role.new
+  new_role ["character_name"] = "Alfred"
+  new_role.save
+
+new_role = Role.new
+  new_role ["character_name"] = "Ra's Al Ghul"
+  new_role.save
+
+new_role = Role.new
+  new_role ["character_name"] = "Rachel Dawes"
+  new_role.save
+
+new_role = Role.new
+  new_role ["character_name"] = "Commissioner Gordon"
+  new_role.save
+
+new_role = Role.new
+  new_role ["character_name"] = "Joker"
+  new_role.save
+
+new_role = Role.new
+  new_role ["character_name"] = "Harvey Dent"
+  new_role.save
+
+new_role = Role.new
+  new_role ["character_name"] = "Bane"
+  new_role.save
+
+new_role = Role.new
+  new_role ["character_name"] = "John Blake"
+  new_role.save
+
+new_agent = Agent.new
+  new_agent ["name"] = "Ari Emanuel"
+  new_agent.save
+
 
 # Prints a header for the movies output
 puts "Movies"
@@ -99,6 +209,7 @@ puts ""
 
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
+
 
 # Prints a header for the cast output
 puts ""
